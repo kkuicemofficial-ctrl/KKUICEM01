@@ -245,7 +245,20 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0 auto;
   padding: 7rem 2rem 5rem;
   text-align: center;
+  position: relative;
 }
+
+.hero-mascot {
+  position: absolute;
+  bottom: 0;
+  width: 170px;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-mascot-blue { left: -200px; }
+.hero-mascot-red  { right: -200px; }
 
 .hero-location {
   font-family: 'IBM Plex Mono', monospace;
@@ -614,6 +627,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ---------------------------------------------------------- RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .hero-mascot { display: none; }
+}
 
 @media (max-width: 760px) {
   .nav-links { display: none; }
