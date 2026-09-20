@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root {
   --cream:      #F5EEE6;
@@ -20,7 +20,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--cream);
   color: var(--ink);
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Asangha', 'IBM Plex Sans Thai', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   min-height: 100vh;
@@ -66,7 +66,7 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-wordmark-text { display: flex; flex-direction: column; line-height: 1.15; }
 
 .nav-wordmark-title {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--navy);
@@ -146,7 +146,7 @@ img { max-width: 100%; height: auto; display: block; }
 .footer-wordmark-text { line-height: 1.2; }
 
 .footer-wordmark-title {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--cream);
@@ -239,7 +239,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .hero h1 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: clamp(2rem, 5vw, 3.2rem);
   font-weight: 700;
   line-height: 1.15;
@@ -263,7 +263,7 @@ img { max-width: 100%; height: auto; display: block; }
 .duration-band { background: var(--navy); color: #fff; padding: 5.5rem 2rem; text-align: center; }
 
 .duration-band h2 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: clamp(1.3rem, 2.5vw, 1.9rem);
   font-weight: 600;
   color: #fff;
@@ -309,7 +309,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .schedule-day-title {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
@@ -333,7 +333,7 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-cards-section { padding: 5rem 2rem 5.5rem; }
 
 .nav-cards-section h2 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--ink);
@@ -363,7 +363,7 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-card-body { padding: 1.6rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
 
 .nav-card-body h3 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--ink);
@@ -393,7 +393,7 @@ img { max-width: 100%; height: auto; display: block; }
 .login-section { width: 100%; max-width: 660px; }
 
 .login-section h1 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: clamp(1.7rem, 4vw, 2.4rem);
   font-weight: 700;
   color: var(--ink);
@@ -419,7 +419,7 @@ img { max-width: 100%; height: auto; display: block; }
 .login-portal-icon { color: var(--navy); opacity: 0.6; margin-bottom: 0.5rem; }
 
 .login-portal-label {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--ink);
@@ -444,7 +444,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .gallery-header h1 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: clamp(1.9rem, 4.5vw, 2.75rem);
   font-weight: 700;
   color: var(--ink);
@@ -493,7 +493,7 @@ img { max-width: 100%; height: auto; display: block; }
 .photo-card-info { padding: 0.8rem 1rem 1rem; }
 
 .photo-card-title {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--ink);
@@ -507,7 +507,7 @@ img { max-width: 100%; height: auto; display: block; }
 .guidebook-header { max-width: 640px; margin: 0 auto; padding: 5.5rem 2rem 1.5rem; text-align: center; }
 
 .guidebook-header h1 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: clamp(1.75rem, 4vw, 2.6rem);
   font-weight: 700;
   color: var(--ink);
@@ -535,7 +535,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .guidebook-download-card h2 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: 1.45rem;
   font-weight: 700;
   color: #fff;
@@ -562,7 +562,7 @@ img { max-width: 100%; height: auto; display: block; }
 .guidebook-contents { max-width: 520px; margin: 3.5rem auto 6rem; padding: 0 2rem; }
 
 .guidebook-contents h2 {
-  font-family: 'Trirong', serif;
+  font-family: 'EucrosiaUPC', 'Trirong', serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--ink);
