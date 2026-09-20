@@ -185,6 +185,25 @@ img { max-width: 100%; height: auto; display: block; }
   );
 }
 
+/* --------------------------------------------------------- THAI ORNAMENT */
+
+.thai-ornament {
+  display: flex;
+  justify-content: center;
+  margin: 1.2rem 0;
+  color: var(--navy);
+  opacity: 0.4;
+}
+
+.thai-ornament svg { width: 260px; height: auto; }
+
+.thai-ornament-light {
+  color: var(--mustard);
+  opacity: 0.55;
+}
+
+.gallery-header .thai-ornament svg { width: 180px; }
+
 /* -------------------------------------------------------------- BUTTONS */
 
 .btn-coral {
