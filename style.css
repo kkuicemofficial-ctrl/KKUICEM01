@@ -122,7 +122,14 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* --------------------------------------------------------------- FOOTER */
 
-.site-footer { background: var(--ink); padding: 3.5rem 2.5rem; }
+.site-footer {
+  background: var(--ink);
+  padding: 3.5rem 2.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 22'%3E%3Cpath d='M0 22 L0 14 C3 14 6 6 9 2 C11 0 13 0 15 1 C17 0 19 0 21 2 C24 6 27 14 30 14 L36 14 L36 22 Z' fill='%23DFBB71' opacity='0.18'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 36px 22px;
+  background-position: top left;
+}
 
 .footer-inner {
   max-width: 1100px;
@@ -174,15 +181,12 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ------------------------------------------------------------- DIVIDER */
 
-.divider-stripe {
-  height: 10px;
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--sage)    0px,
-    var(--sage)    5px,
-    var(--mustard) 5px,
-    var(--mustard) 10px
-  );
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background: var(--cream);
+  padding: 6px 0;
 }
 
 /* --------------------------------------------------------- THAI ORNAMENT */
@@ -247,11 +251,27 @@ img { max-width: 100%; height: auto; display: block; }
   text-align: center;
 }
 
+.hero-mountain {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-mountain svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
 .hero-content {
   max-width: 700px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-mascot {
@@ -262,10 +282,34 @@ img { max-width: 100%; height: auto; display: block; }
   pointer-events: none;
   user-select: none;
   opacity: 0.75;
+  z-index: 1;
 }
 
 .hero-mascot-blue { left: -10px; }
 .hero-mascot-red  { right: -10px; }
+
+/* ------------------------------------------------------ MEDALLION */
+
+.medallion-accent {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1.8rem;
+}
+
+.medallion-accent svg { width: 76px; height: 76px; }
+
+.medallion-watermark {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  opacity: 0.07;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.medallion-watermark svg { width: 230px; height: 230px; }
 
 .hero-location {
   font-family: 'IBM Plex Mono', monospace;
@@ -562,7 +606,11 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 12px;
   padding: 2.5rem 2.25rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.guidebook-download-card > *:not(.medallion-watermark) { position: relative; z-index: 1; }
 
 .guidebook-pdf-label {
   font-family: 'IBM Plex Mono', monospace;

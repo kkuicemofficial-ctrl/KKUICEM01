@@ -36,6 +36,14 @@
 <main>
 
   <section class="hero">
+    <div class="hero-mountain" aria-hidden="true">
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 140 C100 75 200 110 320 82 C440 54 550 95 680 65 C800 35 920 72 1050 50 C1120 38 1165 48 1200 42 L1200 200 L0 200Z" fill="#B8CBAF" opacity="0.22"/>
+        <path d="M0 155 C120 108 240 138 380 112 C520 86 640 122 780 100 C920 78 1060 108 1160 88 C1185 83 1195 87 1200 85 L1200 200 L0 200Z" fill="#88ABBE" opacity="0.18"/>
+        <path d="M0 163 C160 132 320 155 490 138 C660 121 820 148 990 130 C1080 120 1145 132 1200 125 L1200 200 L0 200Z" fill="#21518C" opacity="0.1"/>
+        <path d="M0 176 C240 158 460 174 680 163 C900 152 1080 168 1200 160 L1200 200 L0 200Z" fill="#EDE3D4" opacity="0.55"/>
+      </svg>
+    </div>
     <img src="assets/mascot-blue.png" class="hero-mascot hero-mascot-blue" aria-hidden="true" alt="">
     <img src="assets/mascot-red.png" class="hero-mascot hero-mascot-red" aria-hidden="true" alt="">
     <div class="hero-content">
@@ -67,25 +75,46 @@
     </div>
   </section>
 
-  <div class="divider-stripe" role="presentation" aria-hidden="true"></div>
+  <div class="wave-divider" role="presentation" aria-hidden="true">
+    <svg viewBox="0 0 1200 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:32px;">
+      <path d="M0 16 C50 6 100 26 150 16 C200 6 250 26 300 16 C350 6 400 26 450 16 C500 6 550 26 600 16 C650 6 700 26 750 16 C800 6 850 26 900 16 C950 6 1000 26 1050 16 C1100 6 1150 26 1200 16" stroke="#B8CBAF" stroke-width="2.5" fill="none"/>
+      <path d="M0 22 C50 12 100 32 150 22 C200 12 250 32 300 22 C350 12 400 32 450 22 C500 12 550 32 600 22 C650 12 700 32 750 22 C800 12 850 32 900 22 C950 12 1000 32 1050 22 C1100 12 1150 32 1200 22" stroke="#DFBB71" stroke-width="1.5" fill="none" opacity="0.7"/>
+      <path d="M0 10 C50 0 100 20 150 10 C200 0 250 20 300 10 C350 0 400 20 450 10 C500 0 550 20 600 10 C650 0 700 20 750 10 C800 0 850 20 900 10 C950 0 1000 20 1050 10 C1100 0 1150 20 1200 10" stroke="#88ABBE" stroke-width="1" fill="none" opacity="0.5"/>
+    </svg>
+  </div>
 
   <section class="duration-band" aria-labelledby="duration-heading">
-    <div class="thai-ornament thai-ornament-light" aria-hidden="true">
-      <svg viewBox="0 0 300 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="14" x2="118" y2="14" stroke="currentColor" stroke-width="0.75"/>
-        <line x1="182" y1="14" x2="300" y2="14" stroke="currentColor" stroke-width="0.75"/>
-        <path d="M120 14 L127 8 L134 14 L127 20Z" fill="currentColor"/>
-        <path d="M166 14 L173 8 L180 14 L173 20Z" fill="currentColor"/>
-        <path d="M150 14 C153 11,154 5,150 1 C146 5,147 11,150 14Z" fill="currentColor"/>
-        <path d="M150 14 C153 17,154 23,150 27 C146 23,147 17,150 14Z" fill="currentColor"/>
-        <path d="M150 14 C147 11,141 10,137 14 C141 18,147 17,150 14Z" fill="currentColor"/>
-        <path d="M150 14 C153 11,159 10,163 14 C159 18,153 17,150 14Z" fill="currentColor"/>
-        <path d="M150 14 C148 11,144 7,141 5 C143 8,147 11,150 14Z" fill="currentColor" opacity="0.55"/>
-        <path d="M150 14 C152 11,156 7,159 5 C157 8,153 11,150 14Z" fill="currentColor" opacity="0.55"/>
-        <path d="M150 14 C148 17,144 21,141 23 C143 20,147 17,150 14Z" fill="currentColor" opacity="0.55"/>
-        <path d="M150 14 C152 17,156 21,159 23 C157 20,153 17,150 14Z" fill="currentColor" opacity="0.55"/>
-        <circle cx="150" cy="14" r="3.2" fill="currentColor"/>
-        <circle cx="150" cy="14" r="1.5" fill="var(--navy)"/>
+    <div class="medallion-accent" aria-hidden="true">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(60,60)">
+          <ellipse rx="6.5" ry="18" cy="-36" fill="#C27774" transform="rotate(0)"/>
+          <ellipse rx="6.5" ry="18" cy="-36" fill="#C27774" transform="rotate(45)"/>
+          <ellipse rx="6.5" ry="18" cy="-36" fill="#C27774" transform="rotate(90)"/>
+          <ellipse rx="6.5" ry="18" cy="-36" fill="#C27774" transform="rotate(135)"/>
+          <ellipse rx="6.5" ry="18" cy="-36" fill="#C27774" transform="rotate(180)"/>
+          <ellipse rx="6.5" ry="18" cy="-36" fill="#C27774" transform="rotate(225)"/>
+          <ellipse rx="6.5" ry="18" cy="-36" fill="#C27774" transform="rotate(270)"/>
+          <ellipse rx="6.5" ry="18" cy="-36" fill="#C27774" transform="rotate(315)"/>
+          <ellipse rx="5" ry="13" cy="-24" fill="#DFBB71" transform="rotate(22.5)"/>
+          <ellipse rx="5" ry="13" cy="-24" fill="#DFBB71" transform="rotate(67.5)"/>
+          <ellipse rx="5" ry="13" cy="-24" fill="#DFBB71" transform="rotate(112.5)"/>
+          <ellipse rx="5" ry="13" cy="-24" fill="#DFBB71" transform="rotate(157.5)"/>
+          <ellipse rx="5" ry="13" cy="-24" fill="#DFBB71" transform="rotate(202.5)"/>
+          <ellipse rx="5" ry="13" cy="-24" fill="#DFBB71" transform="rotate(247.5)"/>
+          <ellipse rx="5" ry="13" cy="-24" fill="#DFBB71" transform="rotate(292.5)"/>
+          <ellipse rx="5" ry="13" cy="-24" fill="#DFBB71" transform="rotate(337.5)"/>
+          <circle r="16" fill="#F5EEE6" opacity="0.15"/>
+          <circle r="16" fill="#21518C"/>
+          <ellipse rx="3" ry="9" cy="-8" fill="#F5EEE6" transform="rotate(0)"/>
+          <ellipse rx="3" ry="9" cy="-8" fill="#F5EEE6" transform="rotate(60)"/>
+          <ellipse rx="3" ry="9" cy="-8" fill="#F5EEE6" transform="rotate(120)"/>
+          <ellipse rx="3" ry="9" cy="-8" fill="#F5EEE6" transform="rotate(180)"/>
+          <ellipse rx="3" ry="9" cy="-8" fill="#F5EEE6" transform="rotate(240)"/>
+          <ellipse rx="3" ry="9" cy="-8" fill="#F5EEE6" transform="rotate(300)"/>
+          <circle r="6" fill="#DFBB71"/>
+          <circle r="3" fill="#21518C"/>
+          <circle r="1.5" fill="#F5EEE6"/>
+        </g>
       </svg>
     </div>
     <h2 id="duration-heading">Three days of competition in Khon Kaen</h2>
