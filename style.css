@@ -390,32 +390,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-@keyframes hero-slide-up {
-  from { opacity: 0; transform: translateY(36px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.hero-content .hero-location,
-.hero-content .thai-ornament,
-.hero-content h1,
-.hero-content .hero-lede,
-.hero-content .hero-buttons {
-  animation: hero-slide-up 0.8s ease-out both;
-}
-
-.hero-content .hero-location  { animation-delay: 0s; }
-.hero-content h1               { animation-delay: 0.15s; }
-.hero-content .thai-ornament   { animation-delay: 0.15s; }
-.hero-content .hero-lede       { animation-delay: 0.3s; }
-.hero-content .hero-buttons    { animation-delay: 0.45s; }
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-content .hero-location,
-  .hero-content .thai-ornament,
-  .hero-content h1,
-  .hero-content .hero-lede,
-  .hero-content .hero-buttons { animation: none; }
-}
 
 /* duration */
 

@@ -6,6 +6,24 @@
   <meta name="description" content="KKUICEM — Khon Kaen University International Challenge of Emergency Medicine. Medical students from around the world compete to become the best of emergency medicine.">
   <title>KKUICEM — Home</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    @keyframes hero-slide-up {
+      from { opacity: 0; transform: translateY(36px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-content .hero-location { animation: hero-slide-up 0.8s ease-out both; animation-delay: 0s; }
+    .hero-content h1              { animation: hero-slide-up 0.8s ease-out both; animation-delay: 0.15s; }
+    .hero-content .thai-ornament  { animation: hero-slide-up 0.8s ease-out both; animation-delay: 0.15s; }
+    .hero-content .hero-lede      { animation: hero-slide-up 0.8s ease-out both; animation-delay: 0.3s; }
+    .hero-content .hero-buttons   { animation: hero-slide-up 0.8s ease-out both; animation-delay: 0.45s; }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-content .hero-location,
+      .hero-content h1,
+      .hero-content .thai-ornament,
+      .hero-content .hero-lede,
+      .hero-content .hero-buttons { animation: none; }
+    }
+  </style>
 </head>
 <body>
 
