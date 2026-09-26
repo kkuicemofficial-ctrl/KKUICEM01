@@ -374,10 +374,9 @@ img { max-width: 100%; height: auto; display: block; }
   position: absolute;
   bottom: 0;
   width: 210px;
-  mix-blend-mode: multiply;
   pointer-events: none;
   user-select: none;
-  opacity: 0.9;
+  opacity: 0.92;
   z-index: 3;
 }
 
