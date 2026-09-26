@@ -284,7 +284,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 7rem 2rem 5rem;
+  padding: 7rem 2rem 6.5rem;
   text-align: center;
   isolation: isolate;
 }
@@ -297,6 +297,8 @@ img { max-width: 100%; height: auto; display: block; }
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 78%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 78%, transparent 100%);
 }
 
 .hero-bg-photo {
@@ -305,7 +307,7 @@ img { max-width: 100%; height: auto; display: block; }
   background-size: cover;
   background-position: center;
   opacity: 0;
-  filter: grayscale(65%) sepia(12%) contrast(0.95);
+  filter: grayscale(70%) sepia(10%) contrast(0.95);
   mix-blend-mode: multiply;
   animation: heroBgFade 36s infinite;
 }
@@ -319,8 +321,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 @keyframes heroBgFade {
   0%   { opacity: 0;    }
-  4%   { opacity: 0.16; }
-  13%  { opacity: 0.16; }
+  4%   { opacity: 0.14; }
+  13%  { opacity: 0.14; }
   20%  { opacity: 0;    }
   100% { opacity: 0;    }
 }
@@ -331,6 +333,52 @@ img { max-width: 100%; height: auto; display: block; }
     opacity: 0.1;
   }
   .hero-bg-photo:not(:first-child) { display: none; }
+}
+
+/* ---- hero hill: same 6 photos, clipped into the wave silhouette ---- */
+
+.hero-hill {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-hill svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.hero-hill-photo {
+  opacity: 0;
+  filter: grayscale(50%) sepia(14%) contrast(0.97);
+  animation: heroHillFade 36s infinite;
+}
+
+.hero-hill-photo:nth-child(1) { animation-delay:   0s; }
+.hero-hill-photo:nth-child(2) { animation-delay:  -6s; }
+.hero-hill-photo:nth-child(3) { animation-delay: -12s; }
+.hero-hill-photo:nth-child(4) { animation-delay: -18s; }
+.hero-hill-photo:nth-child(5) { animation-delay: -24s; }
+.hero-hill-photo:nth-child(6) { animation-delay: -30s; }
+
+@keyframes heroHillFade {
+  0%   { opacity: 0;    }
+  4%   { opacity: 0.75; }
+  13%  { opacity: 0.75; }
+  20%  { opacity: 0;    }
+  100% { opacity: 0;    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-hill-photo {
+    animation: none;
+    opacity: 0.6;
+  }
+  .hero-hill-photo:not(:first-child) { display: none; }
 }
 
 /* ------------------------------------------------------------------ */
@@ -347,21 +395,6 @@ img { max-width: 100%; height: auto; display: block; }
   background-size: 80px 80px;
 }
 
-.hero-mountain {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
-  user-select: none;
-}
-
-.hero-mountain svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
 
 .hero-content {
   max-width: 700px;

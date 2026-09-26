@@ -55,12 +55,25 @@
       <div class="hero-bg-photo" style="background-image:url('assets/hero-bg/hero-bg-5-procedural-skills.jpg')"></div>
       <div class="hero-bg-photo" style="background-image:url('assets/hero-bg/hero-bg-6-muay-thai-culture.jpg')"></div>
     </div>
-    <div class="hero-mountain" aria-hidden="true">
-      <svg viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 140 C100 75 200 110 320 82 C440 54 550 95 680 65 C800 35 920 72 1050 50 C1120 38 1165 48 1200 42 L1200 200 L0 200Z" fill="#B8CBAF" opacity="0.22"/>
-        <path d="M0 155 C120 108 240 138 380 112 C520 86 640 122 780 100 C920 78 1060 108 1160 88 C1185 83 1195 87 1200 85 L1200 200 L0 200Z" fill="#88ABBE" opacity="0.18"/>
-        <path d="M0 163 C160 132 320 155 490 138 C660 121 820 148 990 130 C1080 120 1145 132 1200 125 L1200 200 L0 200Z" fill="#21518C" opacity="0.1"/>
-        <path d="M0 176 C240 158 460 174 680 163 C900 152 1080 168 1200 160 L1200 200 L0 200Z" fill="#EDE3D4" opacity="0.55"/>
+    <div class="hero-hill" aria-hidden="true">
+      <svg viewBox="0 0 1200 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="heroHillClip" clipPathUnits="userSpaceOnUse">
+            <path d="M0 220 C100 110 200 170 320 125 C440 80 550 145 680 95 C800 45 920 105 1050 70 C1120 50 1165 65 1200 55 L1200 320 L0 320Z"/>
+          </clipPath>
+        </defs>
+        <path d="M0 250 C120 175 240 215 380 180 C520 145 640 195 780 160 C920 125 1060 170 1160 140 C1185 132 1195 138 1200 135 L1200 320 L0 320Z" fill="#88ABBE" opacity="0.2"/>
+        <path d="M0 262 C160 210 320 250 490 220 C660 190 820 235 990 205 C1080 190 1145 210 1200 198 L1200 320 L0 320Z" fill="#21518C" opacity="0.1"/>
+        <g clip-path="url(#heroHillClip)">
+          <image class="hero-hill-photo" href="assets/hero-bg/hero-bg-1-opening-group.jpg" x="0" y="0" width="1200" height="320" preserveAspectRatio="xMidYMid slice"/>
+          <image class="hero-hill-photo" href="assets/hero-bg/hero-bg-2-awards-celebration.jpg" x="0" y="0" width="1200" height="320" preserveAspectRatio="xMidYMid slice"/>
+          <image class="hero-hill-photo" href="assets/hero-bg/hero-bg-3-auditorium.jpg" x="0" y="0" width="1200" height="320" preserveAspectRatio="xMidYMid slice"/>
+          <image class="hero-hill-photo" href="assets/hero-bg/hero-bg-4-golden-temple.jpg" x="0" y="0" width="1200" height="320" preserveAspectRatio="xMidYMid slice"/>
+          <image class="hero-hill-photo" href="assets/hero-bg/hero-bg-5-procedural-skills.jpg" x="0" y="0" width="1200" height="320" preserveAspectRatio="xMidYMid slice"/>
+          <image class="hero-hill-photo" href="assets/hero-bg/hero-bg-6-muay-thai-culture.jpg" x="0" y="0" width="1200" height="320" preserveAspectRatio="xMidYMid slice"/>
+        </g>
+        <path d="M0 220 C100 110 200 170 320 125 C440 80 550 145 680 95 C800 45 920 105 1050 70 C1120 50 1165 65 1200 55 L1200 320 L0 320Z" fill="#B8CBAF" opacity="0.16" style="mix-blend-mode:multiply"/>
+        <path d="M0 282 C240 250 460 278 680 260 C900 242 1080 268 1200 255 L1200 320 L0 320Z" fill="#EDE3D4" opacity="0.45"/>
       </svg>
     </div>
     <img src="assets/mascot-giant-color.png" class="hero-mascot hero-mascot-blue" aria-hidden="true" alt="">
